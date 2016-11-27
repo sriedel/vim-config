@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/sr/src/psd/billing_report_generator/lib/connector'
+let g:netrw_dirhist_2='/home/sr/src/psd/billing_report_generator/lib/processor'
+let g:netrw_dirhist_3='/home/sr/src/psd/billing_report_generator/bin'
+let g:netrw_dirhist_4='/home/sr/redis-cluster-test/master_a'
+let g:netrw_dirhist_5='/home/sr/.rvm/gems/ruby-2.3.1/gems/redis-3.3.1/lib/redis'
+let g:netrw_dirhist_6='/home/sr/redis-cluster-test/master_a'
+let g:netrw_dirhist_7='/home/sr/redis-cluster-test/sentinel_b'
+let g:netrw_dirhist_8='/home/sr/src/JSONTestSuite/parsers'
+let g:netrw_dirhist_9='/home/sr/src/psd/psd-impnorm/lib/format_rules'

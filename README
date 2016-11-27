@@ -1,0 +1,13 @@
+= Usage
+
+Invoke
+    setup.sh
+to set up the requisite symlinks in your home directory. 
+
+To install the plugins in repo_index:
+    ./install_plugins.sh
+
+To update .gitignore and repo_index after adding new plugins:
+    ./update_plugins.sh
+
+Plugins that are cloned with git are not committed to the repository!

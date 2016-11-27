@@ -1,0 +1,3 @@
+darkdevel-2.0.0.vba: call delete('/home/sr/.vim/colors/darkdevel.vim')
+tagbar.vmb: call delete('/home/sr/.vim/autoload/tagbar.vim')|call delete('/home/sr/.vim/doc/tagbar.txt')|call delete('/home/sr/.vim/plugin/tagbar.vim')|call delete('/home/sr/.vim/syntax/tagbar.vim')
+xmlexpander.vmb: call delete('/home/sr/.vim/autoload/xmlexpander.vim')|call delete('/home/sr/.vim/doc/xmlexpander.txt')|call delete('/home/sr/.vim/plugin/xmlexpander.vim')
