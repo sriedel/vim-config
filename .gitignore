@@ -1,3 +1,5 @@
+repo_index.tmp
+vim/.netrwhist
 vim/bundle/.VimballRecord
 vim/bundle/vim-elixir
 vim/bundle/plantuml-syntax
@@ -6,6 +8,7 @@ vim/bundle/rainbow_parentheses.vim
 vim/bundle/syntastic
 vim/bundle/vim-fugitive
 vim/bundle/neomake
+vim/bundle/vimwiki
 vim/bundle/phoenix.vim
 vim/bundle/vim-pathogen
 vim/bundle/tagbar

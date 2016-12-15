@@ -5,6 +5,7 @@ https://github.com/kien/rainbow_parentheses.vim.git
 git@github.com:scrooloose/syntastic.git
 https://github.com/tpope/vim-fugitive.git
 https://github.com/neomake/neomake.git
+https://github.com/vimwiki/vimwiki.git
 https://github.com/c-brenn/phoenix.vim.git
 https://github.com/tpope/vim-pathogen.git
 git://github.com/majutsushi/tagbar

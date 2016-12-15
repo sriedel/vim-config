@@ -9,8 +9,8 @@ rm -f "$TMP_REPO_INDEX"
 cloned_plugins=$( find "$BUNDLE_DIR" -mindepth 1 -maxdepth 1 -type d -exec test -e "{}/.git/config" \; -print )
 
 echo "$TMP_REPO_INDEX" > .gitignore
-echo "vim/bundle/.netwrist" > .gitignore
-echo "vim/bundle/.VimballRecord" > .gitignore
+echo "vim/.netrwhist" >> .gitignore
+echo "vim/bundle/.VimballRecord" >> .gitignore
 
 for plugin in $cloned_plugins ; do
   sed -n '/^\[remote "origin"\]/,$p' "$plugin"/.git/config \
