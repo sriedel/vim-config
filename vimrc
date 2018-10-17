@@ -31,6 +31,18 @@ set grepprg=ack-grep\ -a\ --nocolor\ --with-filename\ --noheading\ --nobreak
 set exrc
 set secure
 
+" set the leader
+" let mapleader=","
+
+" CtrlP
+let g:ctrlp_match_window = 'bottom,order:ttb'
+let g:ctrlp_switch_buffer = 0
+let g:ctrlp_working_path_mode = 0
+let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+
+" Gundo
+nnoremap <leader>u :GundoToggle<CR>
+
 " syntax highlighting
 syntax on
 colorscheme vividchalk
@@ -47,10 +59,13 @@ autocmd FileType js setlocal foldmethod=syntax " allow syntax folding for js
 cabbr <expr> %% expand('%:p:h')
 vmap <special> <F2> :TagbarToggle<CR>
 vmap <special> <F5> :Tab /=<CR>
-vmap <special> <F6> :Tab /[A-Za-z0-9]+:<CR>
+vmap <special> <F6> :Tab /==<CR>
+vmap <special> <F7> :Tab/\w,\zs/l0l1<CR>
 vmap <special> <F8> :Tab /=><CR>
+vmap <special> <S-F8> :Tab/\w:\zs/l0l1<CR>
 cmap <special> <F11> :DiffReview git diff --minimal --ignore-all-space master..<CR>
 imap #sr (sr<Space><C-R>=strftime("%Y-%m-%d")<Space><CR>)
+imap $sr (sr<Space><C-R>=strftime("%Y-%m-%d")<Space><CR>)
 nmap <F2> :TagbarToggle<CR>
 
 " Plugin specifics
@@ -66,8 +81,11 @@ let lite_sql_query=1
 "                            \ 'passive_filetypes': [] }
 "
 " Neomake
-autocmd! BufWritePost * Neomake
-let g:neomake_ruby_enabled_makers = [ 'mri' ]
+" autocmd! BufWritePost * Neomake
+" let g:neomake_ruby_enabled_makers = [ 'mri', 'rubocop' ]
+" let g:neomake_eruby_enabled_makers = [ 'erb' ]
+" let g:neomake_logfile = '/tmp/neomake.log'
+" call neomake#configure#automake( 'nrwi' )
 
 " Gutentags
 let g:gutentags_cache_dir = '~/.tags_cache'
@@ -111,3 +129,7 @@ let g:tagbar_type_ruby = {
         \ 'F:singleton methods'
     \ ]
 \ }
+
+" Workaround for https://github.com/vim/vim/issues/3417
+let g:ale_lint_on_text_changed = 'normal'
+let g:ale_lint_on_insert_leave = 1
